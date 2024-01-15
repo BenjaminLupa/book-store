@@ -1,13 +1,13 @@
 /* CSS code for the book website layout */
 :root {
---blau: #BADEFC;
---blau-sehr-hell: #EBF6FE;
---rot: #B5446E;
---schrift: #525252;
---schrift hell: #ABABAB;
-  }
-  
-  /* Use the color variables */
+  --blau: #badefc;
+  --blau-sehr-hell: #ebf6fe;
+  --rot: #b5446e;
+  --schrift: #525252;
+  --schrift-hell: #ababab;
+}
+
+/* Use the color variables */
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -46,3 +46,52 @@ nav button:hover {
   background: var(--blau);
 }
 
+@viewport {
+  width: device-width;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/*  HEADER */
+
+.alle-btn {
+  border: 1px solid #b5446e;
+}
+.alle-btn:active {
+  background-color: #badefc;
+  border: 1px solid #badefc;
+}
+
+.favoriten-btn {
+  border: 1px solid #b5446e;
+}
+.favoriten-btn:active {
+  background-color: #badefc;
+  border: 1px solid #badefc;
+}
+
+/* BODY */
+
+main {
+  background-color: #ebf6fe;
+}
+.fav-button {
+  border: 1px solid #b5446e;
+  color: #b5446e;
+}
+.fav-button:active {
+  border: 1px solid #b5446e;
+  background-color: #b5446e;
+  color: #fff;
+}
