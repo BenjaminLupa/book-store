@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Einzelansicht Buch</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">Bookmonkey</div>
+        <div id="buttons">
+            <button id=BtnAllBooks onclick="show_all_books()">Alle Bücher</button>
+            <button id=BtnFavorites onclick="show_favorites()">Favoriten</button>
+        </div>
+    </header>
+    <!-- Book will be displayed here -->
+    <div id="bookDetails">
+        <img id="bookImage" />
+        <div class="info">
+            <h1>Titel des Buches</h1>
+            <p>Autor: Autor des Buches</p>
+            <p>ISBN: ISBN des Buches</p>
+            <p>
+                Kurze Beschreibung des Buches. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
+            </p>
+        </div>
+    </div>
+
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
