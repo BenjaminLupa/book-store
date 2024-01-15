@@ -1,0 +1,49 @@
+@viewport {
+  width: device-width;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/*  HEADER */
+
+.alle-btn {
+  border: 1px solid #b5446e;
+}
+.alle-btn:active {
+  background-color: #badefc;
+  border: 1px solid #badefc;
+}
+
+.favoriten-btn {
+  border: 1px solid #b5446e;
+}
+.favoriten-btn:active {
+  background-color: #badefc;
+  border: 1px solid #badefc;
+}
+
+/* BODY */
+
+main {
+  background-color: #ebf6fe;
+}
+.fav-button {
+  border: 1px solid #b5446e;
+  color: #b5446e;
+}
+.fav-button:active {
+  border: 1px solid #b5446e;
+  background-color: #b5446e;
+  color: #fff;
+}
