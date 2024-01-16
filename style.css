@@ -58,6 +58,11 @@ main {
   background-color: var(--blau);
   border: 1px solid var(--blau);
 }
+.button-color {
+  background-color: var(--blau);
+  border: 1px solid var(--blau);
+  color: #fff;
+}
 #logo {
   position: absolute;
   left: 0px;
