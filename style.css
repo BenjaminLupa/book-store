@@ -133,21 +133,11 @@ main {
 .title-gesamtansicht {
   font-family: Open Sans;
   font-size: 18 px;
+}
 
-  .autor-gesamtansicht {
-    font-family: Open Sans;
-    font-size: 16 px;
-  }
-
-  .isbn-gesamtansicht {
-    font-family: Open Sans;
-    font-size: 16 px;
-  }
-
-  .beschreibung-gesamtansicht {
-    font-family: Open Sans;
-    font-size: 18 px;
-  }
+.beschreibung-gesamtansicht {
+  font-family: Open Sans;
+  font-size: 18 px;
 }
 
 /* Navigationsbuttons Gesamtansicht*/
