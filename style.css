@@ -159,7 +159,7 @@ main {
   width: 341px;
   height: 108px;
   background-color: var(--weiss);
-  padding: 15px 15px 15px 15px;
+  padding: 5px 15px 15px 15px;
   position: relative;
 }
 
@@ -167,13 +167,14 @@ main {
   font-family: "Open Sans";
   font-size: 16px;
   color: var(--rot);
+  line-height: 1.2rem;
 }
 
 .beschreibung-gesamtansicht {
   font-family: "Open Sans";
   font-size: 10px;
   color: var(--schrift-hell);
-  padding-bottom: 5px;
+  padding-top: 3px;
 }
 
 /* Favorisieren-Button Gesamtansicht*/
@@ -183,11 +184,44 @@ main {
   border: 2px solid var(--rot);
   color: var(--rot);
   position: absolute;
-  top: 80px;
+  top: 77px;
   background-color: var(--weiss);
 }
 .button-favorisieren:active {
   border: 2px solid var(--rot);
   background-color: var(--rot);
   color: var(--weiss);
+}
+
+/* BOOK HTML */
+
+#book-details {
+  background-color: #fff;
+  margin: 60px;
+  display: flex;
+  /* grid-template-columns: 1fr 2fr; */
+  grid-column-gap: 40px;
+}
+.book-cover {
+}
+.book-title {
+  color: var(--rot);
+  font-size: 2rem;
+  font-weight: 800;
+  padding-top: 40px;
+}
+.book-author {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.isbn {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.book-content {
+  padding-right: 50px;
+  font-size: 1rem;
+  font-weight: 100;
+  padding-top: 10px;
 }
