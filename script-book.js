@@ -29,3 +29,7 @@ function renderBook(data) {
   <p> ${data.abstract}</p>
   `;
 }
+
+btnAllBooks.addEventListener("click", (el) =>
+  el.preventDefault()((window.location.href = `./index.html`))
+);
