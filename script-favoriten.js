@@ -10,12 +10,14 @@ let favoriteBooks = [];
 function localeStorageLoad() {
   const erhalteDaten = localStorage.getItem("books");
   favoriteBooks = JSON.parse(erhalteDaten) ? JSON.parse(erhalteDaten) : [];
+
+  renderFavouriteBooks();
 }
 
 // Render Favourite Books
-function renderFavouriteBooks(books) {
+function renderFavouriteBooks() {
   const favouriteBookListContainer = document.getElementById("book-list");
-  books.forEach((book) => {
+  favoriteBooks.forEach((book) => {
     const bookElement = document.createElement("div");
 
     bookElement.innerHTML = `
@@ -27,3 +29,5 @@ function renderFavouriteBooks(books) {
     favouriteBookListContainer.appendChild(bookElement);
   });
 }
+
+localeStorageLoad();

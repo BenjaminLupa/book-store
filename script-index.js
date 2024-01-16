@@ -3,6 +3,8 @@ const btnAllBooks = document.querySelector("#btn-all-books");
 const btnFavorites = document.querySelector("#btn-favorites");
 const BookList = document.querySelector("#book-list");
 
+let favoriteBooks = [];
+
 //Leeres Array um in ihn die ganzen Buchdaten zu laden
 const allBooks = [];
 
@@ -43,8 +45,8 @@ function renderBooks(books) {
 
     bookElement.lastElementChild.addEventListener("click", (el) => {
       el.preventDefault();
-      const favoriteBooks = [];
       favoriteBooks.push(book);
+      localStorage.setItem("books", JSON.stringify(favoriteBooks));
       console.log(favoriteBooks);
     });
   });
@@ -65,6 +67,9 @@ mainMenu.forEach(function (button) {
   });
 });
 
-function localeStorageSave() {
-  localStorage.setItem("books", JSON.stringify(book));
+function localeStorageLoad() {
+  const erhalteDaten = localStorage.getItem("books");
+  favoriteBooks = JSON.parse(erhalteDaten) ? JSON.parse(erhalteDaten) : [];
 }
+
+localeStorageLoad();
