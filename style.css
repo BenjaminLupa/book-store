@@ -172,10 +172,11 @@ main {
   background-color: var(--weiss);
   margin: 60px;
   display: flex;
+  /* grid-template-columns: 1fr 2fr; */
   grid-column-gap: 40px;
-  border-radius: 15px;
 }
-
+.book-cover {
+}
 .book-title {
   color: var(--rot);
   font-size: 2rem;
@@ -188,7 +189,6 @@ main {
   font-size: 1rem;
   font-weight: 600;
   padding-top: 10px;
-  color: var(--schrift);
 }
 
 .isbn {
