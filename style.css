@@ -65,20 +65,20 @@ nav button:hover {
 
 /*  HEADER */
 
-.alle-btn {
-  border: 1px solid #b5446e;
+.btn-all-books {
+  border: 1px solid var(--rot);
 }
-.alle-btn:active {
-  background-color: #badefc;
-  border: 1px solid #badefc;
+.btn-all-books:active {
+  background-color: var(--blau);
+  border: 1px solid var(--blau);
 }
 
-.favoriten-btn {
-  border: 1px solid #b5446e;
+.btn-favorites {
+  border: 1px solid var(--rot);
 }
-.favoriten-btn:active {
-  background-color: #badefc;
-  border: 1px solid #badefc;
+.btn-favorites:active {
+  background-color: var(--blau);
+  border: 1px solid var(--blau);
 }
 
 /* BODY */
@@ -86,12 +86,12 @@ nav button:hover {
 main {
   background-color: #ebf6fe;
 }
-.fav-button {
-  border: 1px solid #b5446e;
-  color: #b5446e;
+.button-favorisieren {
+  border: 1px solid var(--rot);
+  color: var(--rot);
 }
-.fav-button:active {
-  border: 1px solid #b5446e;
-  background-color: #b5446e;
+.button-favorisieren:active {
+  border: 1px solid var(--rot);
+  background-color: var(--rot);
   color: #fff;
 }
