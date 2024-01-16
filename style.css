@@ -52,7 +52,6 @@ main {
 }
 
 /* Styling der Buttons */
-
 #buttons {
   position: absolute;
   right: 5px;
@@ -104,6 +103,22 @@ main {
   color: #fff;
 }
 
+/* Favorisieren-Button Gesamtansicht*/
+
+.button-favorisieren {
+  padding: 3px 23px 3px 23px;
+  border: 2px solid var(--rot);
+  color: var(--rot);
+  position: absolute;
+  top: 77px;
+  background-color: var(--weiss);
+}
+.button-favorisieren:active {
+  border: 2px solid var(--rot);
+  background-color: var(--rot);
+  color: var(--weiss);
+}
+
 /* Stylings für das anklickbare Logo */
 #logo {
   position: absolute;
@@ -126,40 +141,6 @@ main {
 }
 
 /* CSS-Klassen für die eingebundenen Daten */
-
-/* Einzelansicht */
-.container-einzelansicht {
-  width: 1152px;
-  height: 535px;
-  background-color: var(--weiss);
-}
-
-.titel-einzelansicht {
-  font-family: "Open Sans";
-  font-size: 32px;
-  color: var(--rot);
-  font-weight: bold;
-}
-
-.autor-einzelansicht {
-  font-family: "Open Sans";
-  font-size: 16px;
-  color: var(--schrift);
-  font-weight: bold;
-}
-
-.isbn-einzelansicht {
-  font-family: "Open Sans";
-  font-size: 16px;
-  color: var(--schrift);
-  font-weight: bold;
-}
-
-.beschreibung-einzelansicht {
-  font-family: "Open Sans";
-  font-size: 18px;
-  color: var(--schrift);
-}
 
 /* Gesamtansicht */
 .container-gesamtansicht {
@@ -185,51 +166,41 @@ main {
   padding-top: 3px;
 }
 
-/* Favorisieren-Button Gesamtansicht*/
-
-.button-favorisieren {
-  padding: 3px 23px 3px 23px;
-  border: 2px solid var(--rot);
-  color: var(--rot);
-  position: absolute;
-  top: 77px;
-  background-color: var(--weiss);
-}
-.button-favorisieren:active {
-  border: 2px solid var(--rot);
-  background-color: var(--rot);
-  color: var(--weiss);
-}
-
-/* BOOK HTML */
+/* Einzelansicht */
 
 #book-details {
-  background-color: #fff;
+  background-color: var(--weiss);
   margin: 60px;
   display: flex;
-  /* grid-template-columns: 1fr 2fr; */
   grid-column-gap: 40px;
+  border-radius: 15px;
 }
-.book-cover {
-}
+
 .book-title {
   color: var(--rot);
   font-size: 2rem;
   font-weight: 800;
   padding-top: 40px;
+  color: var(--rot);
 }
+
 .book-author {
   font-size: 1rem;
   font-weight: 600;
   padding-top: 10px;
+  color: var(--schrift);
 }
+
 .isbn {
   font-size: 1rem;
   font-weight: 600;
+  color: var(--schrift);
 }
+
 .book-content {
   padding-right: 50px;
   font-size: 1rem;
   font-weight: 100;
   padding-top: 10px;
+  color: var(--schrift);
 }

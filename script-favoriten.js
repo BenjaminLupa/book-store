@@ -19,7 +19,7 @@ function renderFavouriteBooks() {
   const favouriteBookListContainer = document.getElementById("book-list");
   favoriteBooks.forEach((book) => {
     const bookElement = document.createElement("div");
-
+    bookElement.className = "container-gesamtansicht";
     bookElement.innerHTML = `
               <h2>${book.title}</h2>
               <p>Von: ${book.author}, ISBN:&nbsp;${book.isbn}</p>
