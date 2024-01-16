@@ -38,6 +38,13 @@ function renderBooks(books) {
     titleElement.addEventListener("click", () => {
       window.location.href = `./book.html?id=${book.id}`;
     });
+
+    bookElement.lastElementChild.addEventListener("click", (el) => {
+      el.preventDefault();
+      const favoriteBooks = [];
+      favoriteBooks.push(book);
+      console.log(favoriteBooks);
+    });
   });
 }
 
@@ -56,5 +63,5 @@ mainMenu.forEach(function (button) {
 });
 
 function localeStorageSave() {
-  localStorage.setItem("books", JSON.stringify());
+  localStorage.setItem("books", JSON.stringify(book));
 }
