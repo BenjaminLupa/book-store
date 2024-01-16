@@ -28,7 +28,7 @@ function renderBooks(books) {
 
     bookElement.innerHTML = `
               <h2 class="title-gesamtansicht" id="${titleId}">${book.title}</h2>
-              <p class="beschreibung-gesamtansicht">Von: ${book.author}, ISBN: ${book.isbn}</p>
+              <p class="beschreibung-gesamtansicht">Von: ${book.author}, ISBN:&nbsp;${book.isbn}</p>
               <button class="button-favorisieren" id=${book.id}>Favorisieren</button>
           `;
 
