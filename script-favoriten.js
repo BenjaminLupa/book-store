@@ -18,7 +18,7 @@ function renderFavouriteBooks(books) {
 
     bookElement.innerHTML = `
               <h2>${book.title}</h2>
-              <p>Von: ${book.author}, ISBN: ${book.isbn}</p>
+              <p>Von: ${book.author}, ISBN:&nbsp;${book.isbn}</p>
               <button class="button-favorisieren" id=${book.id}>Favorisieren</button>
           `;
 

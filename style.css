@@ -5,7 +5,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
 }
 
 /* Color variables */
@@ -22,8 +22,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   background: var(--blau-sehr-hell);
 }
 /* styling für die main-section */
@@ -80,16 +80,22 @@ main {
 #btn-all-books:active {
   background-color: var(--blau);
   border: 1px solid var(--blau);
+  width: 133px;
+  height: 34px;
 }
 
 /* Stylings für den Button "Favoriten" */
 #btn-favorites {
   background-color: var(--weiss);
   border: 1px solid var(--rot);
+  width: 133px;
+  height: 34px;
 }
 #btn-favorites:active {
   background-color: var(--blau);
   border: 1px solid var(--blau);
+  width: 133px;
+  height: 34px;
 }
 .button-color {
   background-color: var(--blau);
@@ -101,7 +107,7 @@ main {
 #logo {
   position: absolute;
   left: 5px;
-  top: 0px;
+  top: 10px;
   font-family: "Kaushan Script";
   font-size: 32px;
   color: var(--rot);
@@ -112,7 +118,7 @@ main {
   text-decoration: none;
   position: absolute;
   left: 5px;
-  top: 25px;
+  top: 10px;
   font-family: "Kaushan Script";
   font-size: 32px;
   color: var(--rot);
@@ -172,14 +178,15 @@ main {
 /* Favorisieren-Button Gesamtansicht*/
 
 .button-favorisieren {
-  border: 1px solid var(--rot);
+  padding: 3px 23px 3px 23px;
+  border: 2px solid var(--rot);
   color: var(--rot);
   position: absolute;
   top: 80px;
   background-color: var(--weiss);
 }
 .button-favorisieren:active {
-  border: 1px solid var(--rot);
+  border: 2px solid var(--rot);
   background-color: var(--rot);
   color: var(--weiss);
 }
