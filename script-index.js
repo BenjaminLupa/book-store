@@ -26,7 +26,7 @@ function renderBooks(books) {
     bookElement.innerHTML = `
               <h2>${book.title}</h2>
               <p>Von: ${book.author}, ISBN: ${book.isbn}</p>
-              <button class="button-favorisieren" book-id=${book.id}>Favorisieren</button>
+              <button class="button-favorisieren" id=${book.id}>Favorisieren</button>
           `;
 
     bookListContainer.appendChild(bookElement);
