@@ -73,14 +73,14 @@ main {
 /* Stylings für den Button "Alle Bücher"*/
 #btn-all-books {
   background-color: var(--weiss);
-  border: 1px solid var(--rot);
+  border: 2px solid var(--rot);
   width: 133px;
   height: 34px;
 }
 
 #btn-all-books:active {
   background-color: var(--blau);
-  border: 1px solid var(--blau);
+  border: 2px solid var(--blau);
   width: 133px;
   height: 34px;
 }
@@ -88,19 +88,19 @@ main {
 /* Stylings für den Button "Favoriten" */
 #btn-favorites {
   background-color: var(--weiss);
-  border: 1px solid var(--rot);
+  border: 2px solid var(--rot);
   width: 133px;
   height: 34px;
 }
 #btn-favorites:active {
   background-color: var(--blau);
-  border: 1px solid var(--blau);
+  border: 2px solid var(--blau);
   width: 133px;
   height: 34px;
 }
 .button-color {
   background-color: var(--blau);
-  border: 1px solid var(--blau);
+  border: 2px solid var(--blau);
   color: #fff;
 }
 

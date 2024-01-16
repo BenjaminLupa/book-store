@@ -1,13 +1,16 @@
+//Deklaration der Selektoren
 const btnAllBooks = document.querySelector("#btn-all-books");
 const btnFavorites = document.querySelector("#btn-favorites");
 const bookDetails = document.querySelector("#book-details");
 
+//
 document.addEventListener("DOMContentLoaded", () => {
   const bookId = new URLSearchParams(window.location.search).get("id");
   const id = parseInt(bookId, 10);
   loadBookData(id);
 });
 
+//
 function loadBookData(id) {
   fetch(`http://localhost:4730/books/${id}`)
     .then((response) => {
@@ -20,6 +23,7 @@ function loadBookData(id) {
     });
 }
 
+//
 function renderBook(data) {
   bookDetails.innerHTML = `
   <img src = "${data.cover}"/>
@@ -30,6 +34,7 @@ function renderBook(data) {
   `;
 }
 
+//
 btnAllBooks.addEventListener("click", (el) =>
   el.preventDefault()((window.location.href = `./index.html`))
 );
