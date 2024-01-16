@@ -14,6 +14,23 @@ function loadBookData() {
     .then((data) => {
       allBooks.push(...data);
       console.log(allBooks);
+      renderBooks(allBooks);
     });
 }
+
+function renderBooks(books) {
+  const bookListContainer = document.getElementById("bookList");
+
+  books.forEach((book) => {
+    const bookElement = document.createElement("div");
+    bookElement.innerHTML = `
+              <h2>${book.title}</h2>
+              <p>Von: ${book.author}, ISBN: ${book.isbn}</p>
+              <button class="button-favorisieren" book-id=${book.id}>Favorisieren</button>
+          `;
+
+    bookListContainer.appendChild(bookElement);
+  });
+}
+
 loadBookData();
