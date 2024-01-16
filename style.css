@@ -129,29 +129,36 @@ main {
 
 /* Einzelansicht */
 .container-einzelansicht {
-  width: 710px;
-  height: 68px;
+  width: 1152px;
+  height: 535px;
   background-color: var(--weiss);
 }
 
 .titel-einzelansicht {
   font-family: "Open Sans";
   font-size: 32px;
+  color: var(--rot);
+  font-weight: bold;
 }
 
 .autor-einzelansicht {
   font-family: "Open Sans";
   font-size: 16px;
+  color: var(--schrift);
+  font-weight: bold;
 }
 
 .isbn-einzelansicht {
   font-family: "Open Sans";
   font-size: 16px;
+  color: var(--schrift);
+  font-weight: bold;
 }
 
 .beschreibung-einzelansicht {
   font-family: "Open Sans";
   font-size: 18px;
+  color: var(--schrift);
 }
 
 /* Gesamtansicht */
