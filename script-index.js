@@ -13,7 +13,6 @@ function loadBookData() {
     })
     .then((data) => {
       allBooks.push(...data);
-      console.log(allBooks);
       renderBooks(allBooks);
     });
 }
