@@ -48,30 +48,36 @@ main {
 /* Styling der Buttons */
 
 #buttons {
-  font-size: 18px;
-  border: 1px solid --rot;
   position: absolute;
   right: 0px;
+  font-family: Open Sans;
+  font-size: 18px;
 }
 
 /* Stylings für den Button "Alle Bücher"*/
-.btn-all-books {
+#btn-all-books {
   background-color: var(--weiss);
   border: 1px solid var(--rot);
 }
-.btn-all-books:active {
+
+#btn-all-books:active {
   background-color: var(--blau);
   border: 1px solid var(--blau);
 }
 
 /* Stylings für den Button "Favoriten" */
-.btn-favorites {
+#btn-favorites {
   background-color: var(--weiss);
   border: 1px solid var(--rot);
 }
-.btn-favorites:active {
+#btn-favorites:active {
   background-color: var(--blau);
   border: 1px solid var(--blau);
+}
+.button-color {
+  background-color: var(--blau);
+  border: 1px solid var(--blau);
+  color: #fff;
 }
 
 /* Stylings für das anklickbare Logo */
@@ -90,14 +96,62 @@ main {
   font-size: 32px;
 }
 
-/* Stylings für h1-Überschrift */
-h1 {
-  position: absolute;
-  left: 0px;
-  margin: 0;
-  color: var(--rot);
-  font-size: 2.5em;
+/* CSS-Klassen für die eingebundenen Daten */
+
+/* Einzelansicht */
+.container-einzelansicht {
+  width: 710 px;
+  height: 68 px;
 }
+
+.titel-einzelansicht {
+  font-family: Open Sans;
+  font-size: 32 px;
+}
+
+.autor-einzelansicht {
+  font-family: Open Sans;
+  font-size: 16 px;
+}
+
+.isbn-einzelansicht {
+  font-family: Open Sans;
+  font-size: 16 px;
+}
+
+.beschreibung-einzelansicht {
+  font-family: Open Sans;
+  font-size: 18 px;
+}
+
+/* Gesamtansicht */
+.container-gesamtansicht {
+  width: 710 px;
+  height: 68 px;
+}
+
+.title-gesamtansicht {
+  font-family: Open Sans;
+  font-size: 18 px;
+
+  .autor-gesamtansicht {
+    font-family: Open Sans;
+    font-size: 16 px;
+  }
+
+  .isbn-gesamtansicht {
+    font-family: Open Sans;
+    font-size: 16 px;
+  }
+
+  .beschreibung-gesamtansicht {
+    font-family: Open Sans;
+    font-size: 18 px;
+  }
+}
+
+/* Navigationsbuttons Gesamtansicht*/
+
 nav button {
   background: var(--blau-sehr-hell);
   color: var(--weiss);
