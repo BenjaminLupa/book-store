@@ -33,10 +33,11 @@ body {
 }
 /* styling für die main-section */
 .book-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin: 40px;
 }
 
 /* Stylings für den Header */
@@ -63,16 +64,16 @@ main {
   font-family: "Open Sans";
   font-size: 18px;
   color: var(--schrift);
-  width: 283 px;
-  height: 34 px;
+  width: 283px;
+  height: 34px;
 }
 
 /* Stylings für den Button "Alle Bücher"*/
 #btn-all-books {
   background-color: var(--weiss);
   border: 1px solid var(--rot);
-  width: 133 px;
-  height: 34 px;
+  width: 133px;
+  height: 34px;
 }
 
 #btn-all-books:active {
@@ -119,48 +120,51 @@ main {
 
 /* Einzelansicht */
 .container-einzelansicht {
-  width: 710 px;
-  height: 68 px;
+  width: 710px;
+  height: 68px;
   background-color: var(--weiss);
 }
 
 .titel-einzelansicht {
   font-family: "Open Sans";
-  font-size: 32 px;
+  font-size: 32px;
 }
 
 .autor-einzelansicht {
   font-family: "Open Sans";
-  font-size: 16 px;
+  font-size: 16px;
 }
 
 .isbn-einzelansicht {
   font-family: "Open Sans";
-  font-size: 16 px;
+  font-size: 16px;
 }
 
 .beschreibung-einzelansicht {
   font-family: "Open Sans";
-  font-size: 18 px;
+  font-size: 18px;
 }
 
 /* Gesamtansicht */
 .container-gesamtansicht {
-  width: 341 px;
-  height: 108 px;
+  width: 341px;
+  height: 108px;
   background-color: var(--weiss);
+  padding: 5px 10px 10px 10px;
+  position: relative;
 }
 
 .title-gesamtansicht {
   font-family: "Open Sans";
-  font-size: 18 px;
+  font-size: 16px;
   color: var(--rot);
 }
 
 .beschreibung-gesamtansicht {
   font-family: "Open Sans";
-  font-size: 12 px;
+  font-size: 10px;
   color: var(--schrift-hell);
+  padding-bottom: 5px;
 }
 
 /* Favorisieren-Button Gesamtansicht*/
@@ -168,6 +172,9 @@ main {
 .button-favorisieren {
   border: 1px solid var(--rot);
   color: var(--rot);
+  position: absolute;
+  top: 80px;
+  background-color: var(--weiss);
 }
 .button-favorisieren:active {
   border: 1px solid var(--rot);
