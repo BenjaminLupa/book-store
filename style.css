@@ -1,64 +1,5 @@
 /* CSS code for the book website layout */
 /* Color variables */
-:root {
-  --blau: #badefc;
-  --blau-sehr-hell: #ebf6fe;
-  --rot: #b5446e;
-  --schrift: #525252;
-  --schrift-hell: #ababab;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-  margin: 0;
-  padding: 0;
-  background: var(--blau-sehr-hell);
-}
-
-header {
-  background: var(--blau-sehr-hell);
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#logo {
-  position: absolute;
-  left: 0px;
-  font-family: Kaushan Script;
-  font-size: 32px;
-}
-
-#buttons {
-  font-size: 18px;
-  border: 1px solid --rot;
-  position: absolute;
-  right: 0px;
-}
-
-h1 {
-  position: absolute;
-  left: 0px;
-  margin: 0;
-  color: var(--rot);
-  font-size: 2.5em;
-}
-
-nav button {
-  background: var(--blau-sehr-hell);
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1em;
-}
-
-nav button:hover {
-  background: var(--blau);
-}
 
 @viewport {
   width: device-width;
@@ -70,15 +11,39 @@ nav button:hover {
   margin: 0;
 }
 :root {
+  --blau: #badefc;
+  --blau-sehr-hell: #ebf6fe;
+  --rot: #b5446e;
+  --schrift: #525252;
+  --schrift-hell: #ababab;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   box-sizing: border-box;
   background-color: #fff;
 }
-
-/*  HEADER */
-
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  background: var(--blau-sehr-hell);
+}
+header {
+  background: var(--blau-sehr-hell);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+main {
+  background-color: #ebf6fe;
+}
+#buttons {
+  font-size: 18px;
+  border: 1px solid --rot;
+  position: absolute;
+  right: 0px;
+}
 .btn-all-books {
   border: 1px solid var(--rot);
 }
@@ -86,7 +51,6 @@ nav button:hover {
   background-color: var(--blau);
   border: 1px solid var(--blau);
 }
-
 .btn-favorites {
   border: 1px solid var(--rot);
 }
@@ -94,11 +58,31 @@ nav button:hover {
   background-color: var(--blau);
   border: 1px solid var(--blau);
 }
-
-/* BODY */
-
-main {
-  background-color: #ebf6fe;
+#logo {
+  position: absolute;
+  left: 0px;
+  font-family: Kaushan Script;
+  font-size: 32px;
+}
+h1 {
+  position: absolute;
+  left: 0px;
+  margin: 0;
+  color: var(--rot);
+  font-size: 2.5em;
+}
+nav button {
+  background: var(--blau-sehr-hell);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+nav button:hover {
+  background: var(--blau);
 }
 .button-favorisieren {
   border: 1px solid var(--rot);
