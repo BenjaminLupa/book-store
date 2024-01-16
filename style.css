@@ -126,8 +126,8 @@ main {
 
 /* Gesamtansicht */
 .container-gesamtansicht {
-  width: 710 px;
-  height: 68 px;
+  width: 341 px;
+  height: 108 px;
 }
 
 .title-gesamtansicht {
@@ -137,10 +137,10 @@ main {
 
 .beschreibung-gesamtansicht {
   font-family: Open Sans;
-  font-size: 18 px;
+  font-size: 12 px;
 }
 
-/* Navigationsbuttons Gesamtansicht*/
+/* Favorisieren-Button Gesamtansicht*/
 
 nav button {
   background: var(--blau-sehr-hell);
