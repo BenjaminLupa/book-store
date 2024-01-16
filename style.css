@@ -31,6 +31,13 @@ body {
   padding: 0;
   background: var(--blau-sehr-hell);
 }
+/* styling für die main-section */
+.book-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
 /* Stylings für den Header */
 header {
