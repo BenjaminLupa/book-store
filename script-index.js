@@ -12,7 +12,8 @@ function loadBookData() {
       }
     })
     .then((data) => {
-      console.log(data);
       allBooks.push(...data);
+      console.log(allBooks);
     });
 }
+loadBookData();
