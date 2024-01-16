@@ -23,6 +23,7 @@
   background-color: #fff;
 }
 
+/* Stylings für den body */
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -31,6 +32,7 @@ body {
   background: var(--blau-sehr-hell);
 }
 
+/* Stylings für den Header */
 header {
   background: var(--blau-sehr-hell);
   padding: 20px;
@@ -38,6 +40,7 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Stylings für die Main */
 main {
   background-color: #ebf6fe;
 }
@@ -51,20 +54,27 @@ main {
   right: 0px;
 }
 
+/* Stylings für den Button "Alle Bücher"*/
 .btn-all-books {
+  background-color: var(--weiss);
   border: 1px solid var(--rot);
 }
 .btn-all-books:active {
   background-color: var(--blau);
   border: 1px solid var(--blau);
 }
+
+/* Stylings für den Button "Favoriten" */
 .btn-favorites {
+  background-color: var(--weiss);
   border: 1px solid var(--rot);
 }
 .btn-favorites:active {
   background-color: var(--blau);
   border: 1px solid var(--blau);
 }
+
+/* Stylings für das anklickbare Logo */
 #logo {
   position: absolute;
   left: 0px;
@@ -74,7 +84,13 @@ main {
 
 #logo a {
   text-decoration: none;
+  position: absolute;
+  left: 0px;
+  font-family: Kaushan Script;
+  font-size: 32px;
 }
+
+/* Stylings für h1-Überschrift */
 h1 {
   position: absolute;
   left: 0px;
