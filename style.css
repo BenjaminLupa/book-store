@@ -175,8 +175,7 @@ main {
   /* grid-template-columns: 1fr 2fr; */
   grid-column-gap: 40px;
 }
-.book-cover {
-}
+
 .book-title {
   color: var(--rot);
   font-size: 2rem;
