@@ -17,20 +17,24 @@ function loadBookData() {
     });
 }
 
+// Render All Books + Click event on title to /book.html to show individual book-info
 function renderBooks(books) {
-  const bookListContainer = document.getElementById("bookList");
+  const bookListContainer = document.getElementById("book-list");
 
   books.forEach((book) => {
     const bookElement = document.createElement("div");
+    const titleId = `book-title-${book.id}`;
+
     bookElement.innerHTML = `
-              <h2>${book.title}</h2>
+              <h2 id="${titleId}">${book.title}</h2>
               <p>Von: ${book.author}, ISBN: ${book.isbn}</p>
               <button class="button-favorisieren" id=${book.id}>Favorisieren</button>
           `;
 
     bookListContainer.appendChild(bookElement);
 
-    bookElement.addEventListener("click", () => {
+    const titleElement = document.getElementById(titleId);
+    titleElement.addEventListener("click", () => {
       window.location.href = `./book.html?id=${book.id}`;
     });
   });
@@ -49,3 +53,7 @@ mainMenu.forEach(function (button) {
     button.classList.add("button-color");
   });
 });
+
+function localeStorageSave() {
+  localStorage.setItem("books", JSON.stringify());
+}
