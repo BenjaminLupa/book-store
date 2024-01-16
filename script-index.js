@@ -53,3 +53,7 @@ mainMenu.forEach(function (button) {
     button.classList.add("button-color");
   });
 });
+
+function localeStorageSave() {
+  localStorage.setItem("books", JSON.stringify());
+}
