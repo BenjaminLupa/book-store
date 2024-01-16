@@ -34,3 +34,15 @@ function renderBooks(books) {
 }
 
 loadBookData();
+
+// Menu Button Color Change:
+const mainMenu = document.querySelectorAll(".menu");
+
+mainMenu.forEach(function (button) {
+  button.addEventListener("click", function () {
+    mainMenu.forEach(function (otherButton) {
+      otherButton.classList.remove("button-color");
+    });
+    button.classList.add("button-color");
+  });
+});
