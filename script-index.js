@@ -30,6 +30,10 @@ function renderBooks(books) {
           `;
 
     bookListContainer.appendChild(bookElement);
+
+    bookElement.addEventListener("click", () => {
+      window.location.href = `./book.html?id=${book.id}`;
+    });
   });
 }
 

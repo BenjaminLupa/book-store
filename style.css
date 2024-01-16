@@ -1,6 +1,3 @@
-/* CSS code for the book website layout */
-/* Color variables */
-
 @viewport {
   width: device-width;
 }
@@ -10,18 +7,23 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+/* Color variables */
 :root {
   --blau: #badefc;
   --blau-sehr-hell: #ebf6fe;
   --rot: #b5446e;
   --schrift: #525252;
   --schrift-hell: #ababab;
+  --weiss: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   box-sizing: border-box;
   background-color: #fff;
 }
+
+/* Stylings für den body */
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -29,29 +31,42 @@ body {
   padding: 0;
   background: var(--blau-sehr-hell);
 }
+
+/* Stylings für den Header */
 header {
   background: var(--blau-sehr-hell);
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Stylings für die Main */
 main {
   background-color: #ebf6fe;
 }
+
+/* Styling der Buttons */
+
 #buttons {
   font-size: 18px;
   border: 1px solid --rot;
   position: absolute;
   right: 0px;
 }
+
+/* Stylings für den Button "Alle Bücher"*/
 .btn-all-books {
+  background-color: var(--weiss);
   border: 1px solid var(--rot);
 }
 .btn-all-books:active {
   background-color: var(--blau);
   border: 1px solid var(--blau);
 }
+
+/* Stylings für den Button "Favoriten" */
 .btn-favorites {
+  background-color: var(--weiss);
   border: 1px solid var(--rot);
 }
 .btn-favorites:active {
@@ -63,12 +78,24 @@ main {
   border: 1px solid var(--blau);
   color: #fff;
 }
+
+/* Stylings für das anklickbare Logo */
 #logo {
   position: absolute;
   left: 0px;
   font-family: Kaushan Script;
   font-size: 32px;
 }
+
+#logo a {
+  text-decoration: none;
+  position: absolute;
+  left: 0px;
+  font-family: Kaushan Script;
+  font-size: 32px;
+}
+
+/* Stylings für h1-Überschrift */
 h1 {
   position: absolute;
   left: 0px;
@@ -78,7 +105,7 @@ h1 {
 }
 nav button {
   background: var(--blau-sehr-hell);
-  color: #fff;
+  color: var(--weiss);
   border: none;
   padding: 10px 20px;
   margin: 10px;
@@ -96,5 +123,5 @@ nav button:hover {
 .button-favorisieren:active {
   border: 1px solid var(--rot);
   background-color: var(--rot);
-  color: #fff;
+  color: var(--weiss);
 }
