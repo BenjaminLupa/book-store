@@ -5,7 +5,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
 }
 
 /* Color variables */
@@ -22,12 +22,14 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   background: var(--blau-sehr-hell);
 }
 /* styling für die main-section */
 .book-list {
+  padding: 10px;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -58,31 +60,37 @@ main {
   font-family: "Open Sans";
   font-size: 18px;
   color: var(--schrift);
-  width: 283 px;
-  height: 34 px;
+  width: 283px;
+  height: 34px;
 }
 
 /* Stylings für den Button "Alle Bücher"*/
 #btn-all-books {
   background-color: var(--weiss);
   border: 1px solid var(--rot);
-  width: 133 px;
-  height: 34 px;
+  width: 133px;
+  height: 34px;
 }
 
 #btn-all-books:active {
   background-color: var(--blau);
   border: 1px solid var(--blau);
+  width: 133px;
+  height: 34px;
 }
 
 /* Stylings für den Button "Favoriten" */
 #btn-favorites {
   background-color: var(--weiss);
   border: 1px solid var(--rot);
+  width: 133px;
+  height: 34px;
 }
 #btn-favorites:active {
   background-color: var(--blau);
   border: 1px solid var(--blau);
+  width: 133px;
+  height: 34px;
 }
 .button-color {
   background-color: var(--blau);
@@ -94,7 +102,7 @@ main {
 #logo {
   position: absolute;
   left: 5px;
-  top: 0px;
+  top: 10px;
   font-family: "Kaushan Script";
   font-size: 32px;
   color: var(--rot);
@@ -104,7 +112,7 @@ main {
   text-decoration: none;
   position: absolute;
   left: 5px;
-  top: 25px;
+  top: 10px;
   font-family: "Kaushan Script";
   font-size: 32px;
   color: var(--rot);
@@ -114,58 +122,60 @@ main {
 
 /* Einzelansicht */
 .container-einzelansicht {
-  width: 710 px;
-  height: 68 px;
+  width: 710px;
+  height: 68px;
   background-color: var(--weiss);
 }
 
 .titel-einzelansicht {
   font-family: "Open Sans";
-  font-size: 32 px;
+  font-size: 32px;
 }
 
 .autor-einzelansicht {
   font-family: "Open Sans";
-  font-size: 16 px;
+  font-size: 16px;
 }
 
 .isbn-einzelansicht {
   font-family: "Open Sans";
-  font-size: 16 px;
+  font-size: 16px;
 }
 
 .beschreibung-einzelansicht {
   font-family: "Open Sans";
-  font-size: 18 px;
+  font-size: 18px;
 }
 
 /* Gesamtansicht */
 .container-gesamtansicht {
-  width: 341 px;
-  height: 108 px;
+  width: 341px;
+  height: 108px;
+  padding: 10px;
   background-color: var(--weiss);
 }
 
 .title-gesamtansicht {
   font-family: "Open Sans";
-  font-size: 18 px;
+  font-size: 18px;
   color: var(--rot);
 }
 
 .beschreibung-gesamtansicht {
   font-family: "Open Sans";
-  font-size: 12 px;
+  font-size: 12px;
   color: var(--schrift-hell);
 }
 
 /* Favorisieren-Button Gesamtansicht*/
 
 .button-favorisieren {
-  border: 1px solid var(--rot);
+  padding: 3px 23px 3px 23px;
+  border: 2px solid var(--rot);
   color: var(--rot);
 }
 .button-favorisieren:active {
-  border: 1px solid var(--rot);
+  border: 2px solid var(--rot);
   background-color: var(--rot);
   color: var(--weiss);
 }
