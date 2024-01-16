@@ -3,6 +3,8 @@ const btnAllBooks = document.querySelector("#btn-all-books");
 const btnFavorites = document.querySelector("#btn-favorites");
 const BookList = document.querySelector("#book-list");
 
+let favoriteBooks = [];
+
 //Leeres Array um in ihn die ganzen Buchdaten zu laden
 const allBooks = [];
 
@@ -40,6 +42,13 @@ function renderBooks(books) {
     titleElement.addEventListener("click", () => {
       window.location.href = `./book.html?id=${book.id}`;
     });
+
+    bookElement.lastElementChild.addEventListener("click", (el) => {
+      el.preventDefault();
+      favoriteBooks.push(book);
+      localStorage.setItem("books", JSON.stringify(favoriteBooks));
+      console.log(favoriteBooks);
+    });
   });
 }
 
@@ -58,7 +67,9 @@ mainMenu.forEach(function (button) {
   });
 });
 
-//
-function localeStorageSave() {
-  localStorage.setItem("books", JSON.stringify());
+function localeStorageLoad() {
+  const erhalteDaten = localStorage.getItem("books");
+  favoriteBooks = JSON.parse(erhalteDaten) ? JSON.parse(erhalteDaten) : [];
 }
+
+localeStorageLoad();
