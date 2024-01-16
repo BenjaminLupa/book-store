@@ -1,10 +1,8 @@
-// const btnAllBooks = document.querySelector("#btn-all-books");
-// const btnFavorites = document.querySelector("#btn-favorites");
-const bookList = document.querySelector("#bookList");
+const btnAllBooks = document.querySelector("#btn-all-books");
+const btnFavorites = document.querySelector("#btn-favorites");
+const BookList = document.querySelector("#book-list");
 
-loadBookData();
-
-// const allBooks = [];
+const allBooks = [];
 
 function loadBookData() {
   fetch("http://localhost:4730/books")
@@ -14,7 +12,9 @@ function loadBookData() {
       }
     })
     .then((data) => {
-      renderBooks(data);
+      allBooks.push(...data);
+      console.log(allBooks);
+      renderBooks(allBooks);
     });
 }
 
@@ -32,3 +32,5 @@ function renderBooks(books) {
     bookListContainer.appendChild(bookElement);
   });
 }
+
+loadBookData();
