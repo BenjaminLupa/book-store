@@ -26,11 +26,13 @@ function loadBookData(id) {
 //
 function renderBook(data) {
   bookDetails.innerHTML = `
-  <img src = "${data.cover}"/>
-  <h2>${data.title}</h2>
-  <p>Autor: ${data.author}</p>
-  <p>ISBN: ${data.id}</p>
-  <p> ${data.abstract}</p>
+  <img class = "book-cover" src = "${data.cover}"/>
+  <div>
+  <h2 class = "book-title">${data.title}</h2>
+  <p class = "book-author">Autor: ${data.author}</p>
+  <p class = "isbn">ISBN: ${data.id}</p>
+  <p class = "book-content"> ${data.abstract}</p>
+  </div>
   `;
 }
 
