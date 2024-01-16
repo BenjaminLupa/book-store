@@ -41,6 +41,8 @@ body {
 
 /* Stylings für den Header */
 header {
+  position: relative;
+  height: 174px;
   background: var(--blau-sehr-hell);
   padding: 20px;
   text-align: center;
@@ -56,15 +58,21 @@ main {
 
 #buttons {
   position: absolute;
-  right: 0px;
-  font-family: Open Sans;
+  right: 5px;
+  top: 25px;
+  font-family: "Open Sans";
   font-size: 18px;
+  color: var(--schrift);
+  width: 283 px;
+  height: 34 px;
 }
 
 /* Stylings für den Button "Alle Bücher"*/
 #btn-all-books {
   background-color: var(--weiss);
   border: 1px solid var(--rot);
+  width: 133 px;
+  height: 34 px;
 }
 
 #btn-all-books:active {
@@ -90,17 +98,21 @@ main {
 /* Stylings für das anklickbare Logo */
 #logo {
   position: absolute;
-  left: 0px;
-  font-family: Kaushan Script;
+  left: 5px;
+  top: 0px;
+  font-family: "Kaushan Script";
   font-size: 32px;
+  color: var(--rot);
 }
 
 #logo a {
   text-decoration: none;
   position: absolute;
-  left: 0px;
-  font-family: Kaushan Script;
+  left: 5px;
+  top: 25px;
+  font-family: "Kaushan Script";
   font-size: 32px;
+  color: var(--rot);
 }
 
 /* CSS-Klassen für die eingebundenen Daten */
@@ -109,25 +121,26 @@ main {
 .container-einzelansicht {
   width: 710 px;
   height: 68 px;
+  background-color: var(--weiss);
 }
 
 .titel-einzelansicht {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 32 px;
 }
 
 .autor-einzelansicht {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 16 px;
 }
 
 .isbn-einzelansicht {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 16 px;
 }
 
 .beschreibung-einzelansicht {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 18 px;
 }
 
@@ -135,33 +148,23 @@ main {
 .container-gesamtansicht {
   width: 341 px;
   height: 108 px;
+  background-color: var(--weiss);
 }
 
 .title-gesamtansicht {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 18 px;
+  color: var(--rot);
 }
 
 .beschreibung-gesamtansicht {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 12 px;
+  color: var(--schrift-hell);
 }
 
 /* Favorisieren-Button Gesamtansicht*/
 
-nav button {
-  background: var(--blau-sehr-hell);
-  color: var(--weiss);
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1em;
-}
-nav button:hover {
-  background: var(--blau);
-}
 .button-favorisieren {
   border: 1px solid var(--rot);
   color: var(--rot);
