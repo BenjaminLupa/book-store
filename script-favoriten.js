@@ -1,9 +1,12 @@
+//Deklaration der Selektoren
 const btnAllBooks = document.querySelector("#btn-all-books");
 const btnFavorites = document.querySelector("#btn-favorites");
 const BookList = document.querySelector("#book-list");
 
+//Leeres Array um in ihn die ganzen Buchdaten zu laden
 let favoriteBooks = [];
 
+//
 function localeStorageLoad() {
   const erhalteDaten = localStorage.getItem("books");
   favoriteBooks = JSON.parse(erhalteDaten) ? JSON.parse(erhalteDaten) : [];
@@ -12,7 +15,6 @@ function localeStorageLoad() {
 // Render Favourite Books
 function renderFavouriteBooks(books) {
   const favouriteBookListContainer = document.getElementById("book-list");
-
   books.forEach((book) => {
     const bookElement = document.createElement("div");
 
