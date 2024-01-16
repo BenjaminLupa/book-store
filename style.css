@@ -156,6 +156,7 @@ main {
 
 /* Gesamtansicht */
 .container-gesamtansicht {
+  border-radius: 10px;
   width: 341px;
   height: 108px;
   background-color: var(--weiss);

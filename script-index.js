@@ -58,6 +58,7 @@ mainMenu.forEach(function (button) {
   });
 });
 
+//
 function localeStorageSave() {
   localStorage.setItem("books", JSON.stringify());
 }
