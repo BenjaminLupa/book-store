@@ -34,6 +34,8 @@ body {
 
 /* Stylings für den Header */
 header {
+  position: relative;
+  height: 174px;
   background: var(--blau-sehr-hell);
   padding: 20px;
   text-align: center;
