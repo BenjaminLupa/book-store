@@ -21,8 +21,8 @@ function renderFavouriteBooks() {
     const bookElement = document.createElement("div");
     bookElement.className = "container-gesamtansicht";
     bookElement.innerHTML = `
-              <h2>${book.title}</h2>
-              <p>Von: ${book.author}, ISBN:&nbsp;${book.isbn}</p>
+              <h2 class="title-gesamtansicht">${book.title}</h2>
+              <p class="beschreibung-gesamtansicht">Von: ${book.author}, ISBN:&nbsp;${book.isbn}</p>
               <button class="button-favorisieren" id=${book.id}>Favorisieren</button>
           `;
 
