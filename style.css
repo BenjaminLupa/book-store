@@ -61,6 +61,12 @@ main {
   color: var(--schrift);
   width: 283px;
   height: 34px;
+  margin-right: 40px;
+  margin-top: 5px;
+}
+.menu {
+  width: 141px;
+  height: 34px;
 }
 
 /* Stylings für den Button "Alle Bücher"*/
