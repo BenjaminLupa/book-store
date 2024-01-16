@@ -1,7 +1,9 @@
+//Deklaration der Selektoren
 const btnAllBooks = document.querySelector("#btn-all-books");
 const btnFavorites = document.querySelector("#btn-favorites");
 const BookList = document.querySelector("#book-list");
 
+//Leeres Array um in ihn die ganzen Buchdaten zu laden
 const allBooks = [];
 
 function loadBookData() {
@@ -48,6 +50,7 @@ function renderBooks(books) {
   });
 }
 
+//
 loadBookData();
 
 // Menu Button Color Change:
