@@ -1,4 +1,5 @@
 /* CSS code for the book website layout */
+/* Color variables */
 :root {
   --blau: #badefc;
   --blau-sehr-hell: #ebf6fe;
@@ -7,10 +8,9 @@
   --schrift-hell: #ababab;
 }
 
-/* Use the color variables */
-
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 12px;
   margin: 0;
   padding: 0;
   background: var(--blau-sehr-hell);
@@ -21,6 +21,20 @@ header {
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+  position: absolute;
+  left: 0px;
+  font-family: Kaushan Script;
+  font-size: 32px;
+}
+
+#buttons {
+  font-size: 18px;
+  border: 1px solid --rot;
+  position: absolute;
+  right: 0px;
 }
 
 h1 {
