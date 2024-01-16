@@ -74,6 +74,11 @@ main {
   background-color: var(--blau);
   border: 1px solid var(--blau);
 }
+.button-color {
+  background-color: var(--blau);
+  border: 1px solid var(--blau);
+  color: #fff;
+}
 
 /* Stylings für das anklickbare Logo */
 #logo {

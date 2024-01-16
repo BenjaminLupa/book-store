@@ -5,7 +5,6 @@ const bookDetails = document.querySelector("#book-details");
 document.addEventListener("DOMContentLoaded", () => {
   const bookId = new URLSearchParams(window.location.search).get("id");
   const id = parseInt(bookId, 10);
-  console.log(id);
   loadBookData(id);
 });
 
@@ -17,7 +16,6 @@ function loadBookData(id) {
       }
     })
     .then((data) => {
-      console.log(data);
       renderBook(data);
     });
 }
